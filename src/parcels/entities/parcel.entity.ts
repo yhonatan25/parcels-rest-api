@@ -1,9 +1,8 @@
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Parcel {
-  @Index({ unique: true })
-  @Column()
+  @PrimaryColumn()
   sku: string;
 
   @Column()
