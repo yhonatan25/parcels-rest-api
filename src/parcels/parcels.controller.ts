@@ -1,7 +1,6 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { ParcelsService } from './parcels.service';
 import { CreateParcelDto } from './dto/create-parcel.dto';
-import { UpdateParcelDto } from './dto/update-parcel.dto';
 
 @Controller('parcels')
 export class ParcelsController {
@@ -12,23 +11,9 @@ export class ParcelsController {
     return this.parcelsService.create(createParcelDto);
   }
 
+  //Since we're not using specs, I'll use this endpoint as a way to test the POST endpoint
   @Get()
   findAll() {
     return this.parcelsService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.parcelsService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateParcelDto: UpdateParcelDto) {
-    return this.parcelsService.update(+id, updateParcelDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.parcelsService.remove(+id);
   }
 }
