@@ -1,3 +1,4 @@
+import { Type } from 'class-transformer';
 import { IsDate, IsNotEmpty, IsString } from 'class-validator';
 
 export class CreateParcelDto {
@@ -23,5 +24,6 @@ export class CreateParcelDto {
 
   @IsNotEmpty()
   @IsDate()
+  @Type(() => Date)
   deliveryDate: Date;
 }
