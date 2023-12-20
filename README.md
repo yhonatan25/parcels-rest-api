@@ -49,14 +49,11 @@ $ npm run start:prod
 ## Running the app using docker compose
 
 ```bash
-# set environment variable
-$ npm run start
+# move to the project path
+$ cd {project_path}
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# run with docker compose
+$ docker-compose up
 ```
 
 ## Test
