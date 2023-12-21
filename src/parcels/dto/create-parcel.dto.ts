@@ -26,4 +26,6 @@ export class CreateParcelDto {
   @IsDate()
   @Type(() => Date)
   deliveryDate: Date;
+
+  shortId: string;
 }

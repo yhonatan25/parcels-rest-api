@@ -6,6 +6,9 @@ export class Parcel {
   sku: string;
 
   @Column()
+  shortId: string;
+
+  @Column()
   description: string;
 
   @Column()

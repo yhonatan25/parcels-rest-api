@@ -26,12 +26,16 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/typeorm": "^10.0.1",
+    "@thi.ng/base-n": "^2.5.22",
+    "base62": "^2.0.1",
+    "base62str": "^1.0.9",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "mysql2": "^3.6.5",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "snowflake-id": "^1.1.0",
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
